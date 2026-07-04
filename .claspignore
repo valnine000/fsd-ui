@@ -1,0 +1,6 @@
+# Ignore local version control and secrets
+**/**.git/**
+.gitignore
+node_modules/**
+.DS_Store
+_Secret.js

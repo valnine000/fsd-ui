@@ -1,0 +1,7 @@
+# Local environment and secrets
+node_modules/
+.DS_Store
+_Secret.js
+
+# Clasp specific
+.clasp.json
