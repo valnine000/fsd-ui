@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>FSD-UI</title>
-    <link rel="stylesheet" href="CSS.html">
+    <base target="_top">
+        <?!= HtmlService.createHtmlOutputFromFile('CSS').getContent(); ?>
 </head>
 <body>
-<div id="fsdUiApplication"></div>
+
+<!-- The Host -->
+<div id="outerScrollContainer" class="hidden-scrollbar" style="width: 100%; height: 100%; overflow: auto; ">
+
+    <!-- The Application UI -->
+    <div id="fsdUiApplication" style="height:100%; ">
+
+        <!-- A Panel Collection, that scroll horizontally in this container -->
+        <div id="panels1Container" class="panels-container-wrapper hidden-scrollbar " style="">
+
+            <!-- A Panel -->
+            <div id="panel1Container" class="panel-container-wrapper hasBorder" style="">
+
+                <!-- The Panel's Content Wrapper -->
+                <div id="panel1Content" style="height: 100%; position: relative; padding: 4px 0 4px 0;">
+                    <p>:)</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
