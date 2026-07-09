@@ -1,6 +1,86 @@
+<!--suppress CssUnusedSymbol -->
 <style>
-    body {
-        background-color: #555500;
-        color: #ff9000;
+    :root {
+        --defaultZoom: 1;
+        --defaultAperture: 420px;
+        --defaultMobilWidth: 420px;
+        --defaultModalWidth: 412px;
+        --defaultDesktopWidth: 1800px;
+        --defaultStackHeight:1;
+        --defaultColumn1WidthViewer: 15ch;
+        --defaultColumn2WidthViewer: 30ch;
+        --defaultColumn3WidthViewer: 5ch;
+        --defaultTimelineDisplay: 'cascade';
+
+        --event-font-size: 12px;
+        --default-font-size: 15px;
+        --button-font-size: 12px;
+        --systemDate-default-font-size:12px;
+        --systemClock-default-font-size:20px;
+
+        --c1: #ff9000;
+        --c1d1: #9a5700;
+
+        --backgroundColor1: #050200;
+        --backgroundColor2: #0b0400;
+        --backgroundColor3: #201000;
+        --backgroundColor3a5: #20100055;
+        --backgroundColor4: #503000;
+        --backgroundColor4a5: #50300055;
+        --backgroundColor5: #ffffff;
+
+        --borderColor0: #40400055;
+        --borderColor1: #420b00;
+        --borderColor2: #60100088;
+        --borderColor3: #802b00;
+        --borderColor4: #a03000;
+
+    // The Fours
+    --theFours4Am: #620b0099;
+        --theFours8Am: #450b00aa;
+        --theFours12Pm: #380b00aa;
+        --theFours4Pm: #220b00aa;
+        --theFours8Pm: #000000;
+        --theFours12Am: #000000;
+
     }
+
+    body {
+        background-color: var(--backgroundColor1);
+        color: var(--c1);
+    }
+
+    .hasBorder {
+        border: 1px solid var(--borderColor1);
+    }
+
+    .panels-container-wrapper {
+        width: auto;
+        height: 280px;
+        padding: 4px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .panel-container-wrapper {
+        display:inline-block;
+        vertical-align: top;
+        height:270px;
+        width:var(--defaultMobilWidth);
+        padding: 4px 8px 4px 4px;
+        overflow: hidden;
+    }
+
+
+    /* The Invisible Scrollbar Class */
+    .hidden-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .hidden-scrollbar::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+    }
+
 </style>
